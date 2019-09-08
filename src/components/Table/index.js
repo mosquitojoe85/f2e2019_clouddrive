@@ -13,7 +13,7 @@ function Table({ data }) {
         <tbody>
           <tr><th>名稱</th><th>上次修改</th><th>檔案大小</th><th>擁有者</th><th></th></tr>
           {data.map(el => (
-            <tr>
+            <tr key={el.name}>
               <td><Icon type={`file_${el.type}`} />{el.name}</td>
               <td>{el.date}</td>
               <td>{el.size}</td>
