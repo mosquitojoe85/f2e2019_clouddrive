@@ -1,0 +1,90 @@
+@import "./_var.scss";
+
+.appWrapper {
+  .app {
+    max-width: $maxWidth;
+    display: flex;
+    min-height: 100vh;
+    margin: 0 auto;
+    .navBar {
+      width: 256px;
+      background-color: $blue;
+      padding: 60px 33px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      h1 {
+        font-size: 24px;
+        color: $white;
+        margin: 0 0 42px;
+        text-align: center;
+      }
+      button {
+        border: none;
+        outline: none;
+        border-radius: 50px;
+        width: 100%;
+        background-color: $white;
+        color: $blue;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        padding: 12px 40px;
+        font-size: 18px;
+        margin-bottom: 26px;
+        .icon {
+          margin-right: 9px;
+        }
+      }
+      .linkItem {
+        color: $white;
+        font-size: 18px;
+        margin: 0 0 18px 30px;
+        cursor: pointer;
+        .icon {
+          width: 22px;
+          margin-right: 11px;
+        }
+      }
+      h2 {
+        color: $white;
+        font-size: 24px;
+        margin: 0;
+        margin-bottom: 4px;
+        font-weight: bold;
+      }
+      .role {
+        color: $white;
+        margin-bottom: 23px;
+        font-size: 18px;
+      }
+      .contentBar {
+        height: 10px;
+        border-radius: 20px;
+        border: 1px solid $white;
+        margin-bottom: 11px;
+      }
+      .contentText {
+        text-align: center;
+        color: $white;
+        font-size: 15px;
+
+      }
+    }
+    .mainBlock {
+      flex: 1;
+      padding: 46px 65px 74px;
+      .searchBlock {
+        display: flex;
+        justify-content: flex-end;
+        margin-bottom: 25px;
+        .search {
+          background-color: $gray;
+          width: 443px;
+          height: 50px;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+@import "../../_var.scss";
+
+.table {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 23px;
+    div {
+      font-size: 20px;
+    }
+    button {
+      height: 40px;
+      border-radius: 30px;
+      border: 1px solid $deepGray;
+      color: $deepGray;
+      font-size: 18px;
+      padding: 8px 38px;
+    }
+  }
+  table {
+    width: 100%;
+    th {
+      color: $black;
+      font-weight: bold;
+      font-size: 18px;
+      border-bottom: 1px solid $gray;
+      padding-bottom: 20px;
+      margin-bottom: 5px;
+      &:nth-child(1) {
+        text-align: left;
+      }
+    }
+    td {
+      font-size: 18px;
+      color: $black;
+      padding: 15px 0;
+      text-align: center;
+      &:nth-child(1) {
+        text-align: left;
+      }
+      .icon {
+        width: 24px;
+        margin-right: 29px;
+      }
+    }
+  }
+}
